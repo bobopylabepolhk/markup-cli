@@ -23,15 +23,12 @@ Cоздаёт шаблон и скачивает страницы.
 | -p, --page <templateName=url> | Страница                      | -            |
 | -o, --output <dir>            | Корневая папка страниц        | ./pages      |
 | --no-download                 | Пропустить скачивание статики | false        |
-|                               |                               |              |
-|                               |                               |              |
-|                               |                               |              |
-|                               |                               |              |
-|                               |                               |              |
+
 
 Пример:
 ```bash
-markup-cli -n search-results -p search-results="https://test.truckdrive.ru/offers/?search_searchstring=096.2536&search_searchtype=1&search_brandname=SAMPA&tab-search-line=search-by-articles" -o ./pages```
+markup-cli -n search-results -p search-results="https://test.truckdrive.ru/offers/?search_searchstring=096.2536&search_searchtype=1&search_brandname=SAMPA&tab-search-line=search-by-articles" -o ./pages
+```
 
 ### markup-cli reindex [pages-dir]
 Регенерирует корневой index.html, обходя папку шаблонов и собирая все подпапки, у которых есть scraped/index.html.
